@@ -41,9 +41,21 @@ body {
     font-size: 2em;
 }
 
+.cvSection {
+    background-color: #290059;
+    padding: 0.1em 1.5em;
+    margin-bottom: 5em;
+}
+
+.cvSection h2 {font-size: 2em; margin-bottom: 2em;}
+.cvSection h3 {font-size: 1.75em;}
+.cvSection h4 {font-size: 1.5em;}
+.cvSection p {font-size: 1.2em;}
+
 .socials {
     display: flex;
     justify-content: center;
+    margin-bottom: 5em;
 }
 
 .mainHeader {
