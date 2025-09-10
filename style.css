@@ -6,6 +6,25 @@ body {
     margin: 0;
     padding: 0 28em;
 }
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainHeader {
+    text-align: center;
+}
+.mainHeader h1 {
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+.mainHeader h2 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+.netColor {color: #9c33ff;}
 
 #selfPortrait1, #fishingPicture {
     max-width: 100%;
@@ -27,6 +46,13 @@ body {
     justify-content: center;
 }
 
+#introText {
+    font-size: 1.3em;
+    max-width: 600px;
+    text-align: left;
+}
+
+
 .hobbyColumn {
     display: flex;
     flex-wrap: wrap;
@@ -37,13 +63,18 @@ body {
     justify-content: center;
 }
 
-.hobbyColumnList {
-    font-size: 2em;
+.hobbyColumnList {font-size: 2em;}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
 }
 
 .cvSection {
     background-color: #290059;
     padding: 0.1em 1.5em;
+    padding-bottom: 1.5em;
     margin-bottom: 5em;
 }
 
@@ -52,53 +83,29 @@ body {
 .cvSection h4 {font-size: 1.5em;}
 .cvSection p {font-size: 1.2em;}
 
-.socials {
-    display: flex;
-    justify-content: center;
+.whyThisEducation {
+    padding: 0.1em 1.5em;
     margin-bottom: 5em;
+    padding-bottom: 1.5em;
+    background-color: #311459;
 }
 
-.mainHeader {
+.whyThisEducation a {color: plum; font-size: 1.2em;}
+.whyThisEducation h2 {font-size: 2em;}
+.whyThisEducation p {font-size: 1.2em;}
+.whyThisEducation label {font-size: 1.2em}
+
+.companyTable {
+    width: 50%;
     text-align: center;
+    font-size: 1.2em;
 }
-
-.mainHeader h1 {
-    font-size: 3em;
-    margin-bottom: 0em;
-}
-.mainHeader h2 {
-    font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 3em;
-}
-
-#introText {
-    font-size: 1.3em;
-    max-width: 600px;
-    text-align: left;
-}
-
-.netColor {
-    color: #9c33ff;
-}
-
-.jersey-15-regular {
-  font-family: "Jersey 15", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 
 /*For mobile*/
 @media (max-width: 600px) {
     
-    .mainHeader h1 {
-        font-size: 2em;
-    }
-    .mainHeader h2 {
-        font-size: 1.5em;
-    }
+    .mainHeader h1 {font-size: 2em;}
+    .mainHeader h2 {font-size: 1.5em;}
 
     .column1 {
         flex-direction: column;
