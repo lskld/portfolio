@@ -2,9 +2,7 @@ body {
     background-color:  #1a0033;
     color: white;
     font-family: "Jersey 15", sans-serif;
-
     margin: 0;
-    padding: 0 28em;
 }
 .jersey-15-regular {
   font-family: "Jersey 15", sans-serif;
@@ -12,18 +10,9 @@ body {
   font-style: normal;
 }
 
-.mainHeader {
-    text-align: center;
-}
-.mainHeader h1 {
-    font-size: 3em;
-    margin-bottom: 0em;
-}
-.mainHeader h2 {
-    font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 3em;
-}
+.mainHeader {text-align: center;}
+.mainHeader h1 {font-size: 3em; margin-bottom: 0em;}
+.mainHeader h2 {font-size: 2em; margin-top: 0; margin-bottom: 3em;}
 .netColor {color: #9c33ff;}
 
 #selfPortrait1, #fishingPicture {
@@ -37,13 +26,20 @@ body {
     margin: 0.3em;
 }
 
+.section1 {
+    background-color: #290059;
+    padding: 3em;
+    max-width: 1200px;
+    margin: 5em auto;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.35);
+}
+
 .column1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 3em;
     align-items: flex-start;
-    margin-bottom: 5em;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #introText {
@@ -52,15 +48,19 @@ body {
     text-align: left;
 }
 
+.hobbySection {
+    background-color: #311459;
+    padding: 3em;
+    max-width: 1200px;
+    margin: 5em auto;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.35);
+}
 
 .hobbyColumn {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 2em;
-    text-align: left;
-    margin-bottom: 5em;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hobbyColumnList {font-size: 2em;}
@@ -73,9 +73,11 @@ body {
 
 .cvSection {
     background-color: #290059;
-    padding: 0.1em 1.5em;
+    padding: 0.1em 3em;
     padding-bottom: 1.5em;
-    margin-bottom: 5em;
+    max-width: 1200px;
+    margin: 5em auto;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.35);
 }
 
 .cvSection h2 {font-size: 2em; margin-bottom: 2em;}
@@ -84,10 +86,12 @@ body {
 .cvSection p {font-size: 1.2em;}
 
 .whyThisEducation {
-    padding: 0.1em 1.5em;
-    margin-bottom: 5em;
+    padding: 0.1em 3em;
+    max-width: 1200px;
+    margin: 5em auto;
     padding-bottom: 1.5em;
     background-color: #311459;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.35);
 }
 
 .whyThisEducation a {color: plum; font-size: 1.2em;}
@@ -101,7 +105,32 @@ body {
     font-size: 1.2em;
 }
 
-/*For mobile*/
+/*For smaller devices*/
+@media (max-width: 1199px) {
+    
+    .mainHeader h1 {font-size: 2em;}
+    .mainHeader h2 {font-size: 1.5em;}
+
+    .column1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em
+    }
+
+    .hobbyColumn {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em
+    }
+
+    #selfPortrait1, #fishingPicture {
+        max-width: 60%;
+        height: auto;
+    }
+
+}
+
 @media (max-width: 600px) {
     
     .mainHeader h1 {font-size: 2em;}
@@ -109,12 +138,15 @@ body {
 
     .column1 {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        gap: 2em
     }
 
     .hobbyColumn {
         flex-direction: column;
         align-items: center;
+        gap: 2em
     }
 
     #selfPortrait1, #fishingPicture {
